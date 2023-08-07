@@ -1,7 +1,7 @@
 Database = {};
 Database.__index = Database;
 
-function Database.new(_, resourceName, path, beautify, timedSave, saveInterval, debug)
+function Database.new(resourceName, path, beautify, timedSave, saveInterval, debug)
   local self = setmetatable({}, Database);
   self.resourceName = resourceName;
   self.timedSave = timedSave;
